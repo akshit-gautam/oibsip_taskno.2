@@ -3,13 +3,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Playball&family=Roboto:wght@500&family=Ubuntu:wght@300&display=swap');
 
 
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
 }
-
+body{
+    background-color: rgba(0, 0, 0, 0.945);
+}
 nav{
     position: fixed;
     height: 70px;
@@ -20,27 +23,34 @@ nav{
     align-items: center; 
     color: white;
 }
+.image img{
+    height: 70vh;
+    
+}
+.container{
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    height: 100vh;
+    width: 100%;
+    padding-top: 70px;
+    background-image:url("../images/bg_refreshworks.jpg");
+    background-color: rgba(128, 128, 128, 0.61);
+    background-blend-mode: multiply;
+}
+.about{
+    color: aliceblue;
+    width: 35%;
+    font-size: 1.8rem;
+    margin: 0 10vw;
+   
+}
 .navlinks a{
     font-size: 20px;
     color: white;
     margin: 0px 5px;
-  
     
-}
-.home{
-    background-image: url("./images/bg_refreshworks.jpg");
-    color: white;
-    height: 100vh;
-    display: flex;
-    align-items: center;
 
-}
-.home .home-cotent{ 
-    font-size: 23px;
-    color:white;
-    margin-left: 10vw;  
-    font-family: 'Playball', cursive;
-    
 }
 .hr{
     position: absolute;
@@ -50,15 +60,16 @@ nav{
     top: 70px;
     left:0px;
 }
-#logo{
-    font-size: 25px;
+.about h1{
+    font-size: 5rem;
 }
-.text-1{
-    font-size: 2.8rem;
+.about span{
+    color:#F9004d;
 }
-.text-2{
-    font-size: 4rem;
-}
-.text-3{
-    font-size: 2.1rem;
+.button{
+    padding:7px 15px;
+    color: aliceblue;
+    background-color:#F9004d;
+       border-radius: 20px;
+    
 }
